@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap');
+
+body {
+	margin:0 auto;
+	text-align: center;
+	background-color:#fcf9ff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'The Girl Next Door', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 50px; 
+}
+
+.criar {
+    padding: 10px;
+    margin: 5px;
+}
+
+img {
+    float: left;
+    width: 50%;
+}
+
+section h1 {
+    font-family: 'Francois One', sans-serif;
+    font-size: 3rem;
+    display: flex;
+    margin: 20px;
+}
+
+.descricao {
+    float: left;
+    width: 50%;
+    animation: entrada .80s forwards;
+}
+
+@keyframes entrada {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    
+}
+
+.descricao p {
+    text-align: left;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+
+input {
+    border: 1px solid teal;
+    border-radius: 5px;
+    height: 20px;
+    font-size: 0.8rem;
+}
+
+
+button {
+    background-color: transparent;
+    margin: 5px;
+    border: 1px solid #e3e3e3;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    
+}
+
+li {
+    font-size: 1rem;
+    width: 80%;
+   
+}
+
+.btn {
+    background-color: teal;
+    color: white;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+
+#lista {
+    width: 25%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+
+@media (max-width: 850px) {
+    section, h1, p, .criar .descricao {
+        width: 100%;
+    }
+
+    section img {
+        display: none;
+    }
+
+    button {
+       display: flexbox;
+    }
+
+
+}
